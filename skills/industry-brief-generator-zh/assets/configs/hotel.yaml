@@ -1,0 +1,136 @@
+industry: hotel
+industry_name_zh: 海外酒店行业
+brand: HotelBiz Daily｜海外酒店商业快报
+logo_preferred: outputs/brand/hotelbiz-daily-square-logo.png
+candidate_count: 20
+final_count: 8
+regions:
+  - 美国
+  - 加拿大
+  - 英国
+  - 欧盟主要国家
+  - 中东主要旅游市场
+  - 澳大利亚
+  - 新西兰
+  - 日本
+  - 韩国
+  - 新加坡
+  - 东南亚主要市场
+sources:
+  - Skift
+  - Hotel Dive
+  - Hospitality Net
+  - Hotel News Now / CoStar
+  - Lodging Magazine
+  - Hotel Management
+  - PhocusWire
+  - Travel Weekly
+  - BTN / Business Travel News
+  - AHLA
+  - HVS
+  - STR / CoStar
+  - PR Newswire - Travel / Hospitality
+  - Business Wire - Travel / Hospitality
+source_tiers:
+  tier_1:
+    - Skift
+    - Hotel Dive
+    - Hospitality Net
+    - Hotel News Now / CoStar
+    - Lodging Magazine
+    - Hotel Management
+    - STR / CoStar
+    - HVS
+  tier_2:
+    - PhocusWire
+    - Travel Weekly
+    - BTN / Business Travel News
+    - AHLA
+    - Company announcements
+    - PR Newswire - Travel / Hospitality
+    - Business Wire - Travel / Hospitality
+  tier_3:
+    - Reuters Travel / Consumer
+    - Bloomberg Travel
+    - CNBC Travel
+    - Market research summaries
+    - Tourism board releases
+    - Mainstream business media
+include_topics:
+  - 酒店集团业绩和战略
+  - RevPAR、入住率、ADR和需求趋势
+  - 酒店投资、并购和资产交易
+  - 新酒店签约、开业和开发管线
+  - 奢华酒店、生活方式酒店和精品酒店
+  - 度假酒店、长住酒店和服务式公寓
+  - 商旅、会展和团体需求
+  - 酒店科技、收益管理和AI运营
+  - 忠诚度会员和直订渠道
+  - 可持续运营、能源和劳动力成本
+exclude_topics:
+  - 泛旅游攻略
+  - 个人游记和自媒体推荐
+  - 单一酒店促销软文
+  - 与酒店经营无关的景点新闻
+  - 只谈股价且无经营信息的资本市场新闻
+  - 航空、邮轮、餐饮新闻但无酒店关联
+writing_style:
+  - 专业
+  - 清爽
+  - 有商业判断
+  - 关注经营指标
+  - 短句优先
+  - 卡片化
+scoring:
+  scale: 0-5
+  weights:
+    freshness: 1.3
+    industry_impact: 1.5
+    business_value: 1.5
+    regional_relevance: 1.2
+    novelty: 0.9
+    actionability: 1.2
+    source_quality: 1.3
+  priority_rules:
+    - RevPAR、入住率、ADR、开发管线、投资交易和品牌战略优先
+    - 涉及国际酒店集团、头部业主、REIT和主要市场的数据优先
+    - 泛旅游攻略、单店促销和软文降权
+dedupe_keys:
+  - hotel_group
+  - brand
+  - property
+  - owner_or_investor
+  - transaction
+  - market_region
+  - date_window
+poster:
+  size: 1080x1350
+  scale: 2
+  cover_title_max_chars: 20
+  quick_read_max_chars: 18
+  card_title_max_chars: 18
+  output_pattern: outputs/hotel/{brand_slug}-poster-{date}@2x.png
+  avoid_line_break_terms:
+    - 入住率
+    - RevPAR
+    - ADR
+    - 奢华酒店
+    - 生活方式酒店
+    - 长住酒店
+    - 服务式公寓
+    - 收益管理
+    - 直订渠道
+memory_rules:
+  memory_path: outputs/hotel/memory.md
+  output_dir: outputs/hotel
+  remember:
+    - selected_story_ids
+    - final_source_links
+    - market_performance_themes
+    - rejected_duplicate_topics
+    - source_quality_notes
+  avoid:
+    - raw_search_logs
+    - travel_inspiration_without_business_value
+    - unsupported_market_size_claims
+

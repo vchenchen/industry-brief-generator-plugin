@@ -1,0 +1,144 @@
+industry: commercial_real_estate
+industry_name_zh: 海外商业地产行业
+brand: CREBiz Daily｜海外商业地产快报
+logo_preferred: outputs/brand/crebiz-daily-square-logo.png
+candidate_count: 20
+final_count: 8
+regions:
+  - 美国
+  - 加拿大
+  - 英国
+  - 欧盟主要国家
+  - 澳大利亚
+  - 新西兰
+  - 日本
+  - 韩国
+  - 新加坡
+  - 东南亚主要市场
+  - 中东主要资本市场
+sources:
+  - CoStar News
+  - Bisnow
+  - The Real Deal
+  - Commercial Observer
+  - GlobeSt
+  - PERE
+  - IPE Real Assets
+  - Green Street
+  - MSCI Real Assets
+  - CBRE Research
+  - JLL Research
+  - Cushman & Wakefield Research
+  - Colliers Research
+  - Savills Research
+  - Reuters Real Estate
+  - Bloomberg Real Estate
+source_tiers:
+  tier_1:
+    - CoStar News
+    - Bisnow
+    - The Real Deal
+    - Commercial Observer
+    - GlobeSt
+    - PERE
+    - IPE Real Assets
+    - Green Street
+    - MSCI Real Assets
+  tier_2:
+    - CBRE Research
+    - JLL Research
+    - Cushman & Wakefield Research
+    - Colliers Research
+    - Savills Research
+    - REIT announcements
+    - Company announcements
+    - PR Newswire - Real Estate
+    - Business Wire - Real Estate
+  tier_3:
+    - Reuters Real Estate
+    - Bloomberg Real Estate
+    - Financial Times Real Estate
+    - CNBC Real Estate
+    - Local business journals
+    - Market research summaries
+include_topics:
+  - 商业地产资本市场和融资
+  - 资产交易、并购和组合出售
+  - REIT业绩、估值和资产处置
+  - 办公、零售、工业物流、多户住宅和酒店地产
+  - 租赁需求、空置率、租金和吸纳量
+  - 利率、债务到期和再融资压力
+  - 困境资产、止赎和贷款违约
+  - 数据中心、生命科学园区和冷链等新兴资产
+  - 城市更新、改造和混合用途项目
+  - ESG、能源改造和运营成本
+exclude_topics:
+  - 住宅买房攻略
+  - 家装和经纪人营销内容
+  - 单一楼盘宣传软文
+  - 与商业地产经营无关的城市生活新闻
+  - 只谈股价且无资产或经营信息的资本市场新闻
+  - 无明确金额、面积、租户、业主或市场信息的项目稿
+writing_style:
+  - 专业
+  - 克制
+  - 关注资产和现金流
+  - 关注利率和资本结构
+  - 短句优先
+  - 卡片化
+scoring:
+  scale: 0-5
+  weights:
+    freshness: 1.3
+    industry_impact: 1.6
+    business_value: 1.6
+    regional_relevance: 1.2
+    novelty: 0.8
+    actionability: 1.2
+    source_quality: 1.3
+  priority_rules:
+    - 资本市场、债务压力、资产交易、租赁指标和REIT动作优先
+    - 数据中心、工业物流、多户住宅等结构性资产变化优先
+    - 单楼盘营销稿、经纪人观点和弱数据内容降权
+dedupe_keys:
+  - asset
+  - owner_or_investor
+  - tenant
+  - transaction
+  - lender
+  - market_region
+  - date_window
+poster:
+  size: 1080x1350
+  scale: 2
+  cover_title_max_chars: 20
+  quick_read_max_chars: 18
+  card_title_max_chars: 18
+  output_pattern: outputs/commercial_real_estate/{brand_slug}-poster-{date}@2x.png
+  avoid_line_break_terms:
+    - 商业地产
+    - 资本市场
+    - 资产交易
+    - 再融资
+    - 困境资产
+    - 数据中心
+    - 工业物流
+    - 多户住宅
+    - 空置率
+    - 租金
+    - REIT
+memory_rules:
+  memory_path: outputs/commercial_real_estate/memory.md
+  output_dir: outputs/commercial_real_estate
+  remember:
+    - selected_story_ids
+    - final_source_links
+    - capital_market_themes
+    - asset_class_themes
+    - rejected_duplicate_topics
+    - source_quality_notes
+  avoid:
+    - raw_search_logs
+    - residential_homebuying_tips
+    - unsupported_valuation_claims
+

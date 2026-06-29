@@ -1,0 +1,133 @@
+industry: office_supplies
+industry_name_zh: 海外办公用品行业
+brand: OfficeBiz Daily｜海外办公用品商业快报
+logo_preferred: outputs/brand/officebiz-daily-square-logo.png
+candidate_count: 20
+final_count: 8
+regions:
+  - 美国
+  - 加拿大
+  - 英国
+  - 欧盟主要国家
+  - 澳大利亚
+  - 新西兰
+  - 日本
+  - 韩国
+  - 新加坡
+  - 东南亚主要市场
+sources:
+  - OPI / Office Products International
+  - Workplace360
+  - Independent Dealer
+  - Business of Furniture
+  - Furniture Today
+  - Stationery Trends
+  - Office Products Women in Leadership / OPWIL
+  - Retail Dive
+  - Modern Retail
+  - Digital Commerce 360
+  - Supply Chain Dive
+  - PR Newswire - Retail / Office Products
+  - Business Wire - Retail / Office Products
+  - Company announcements
+source_tiers:
+  tier_1:
+    - OPI / Office Products International
+    - Workplace360
+    - Independent Dealer
+    - Business of Furniture
+    - Furniture Today
+    - Stationery Trends
+  tier_2:
+    - Retail Dive
+    - Modern Retail
+    - Digital Commerce 360
+    - Supply Chain Dive
+    - Company announcements
+    - PR Newswire - Retail / Office Products
+    - Business Wire - Retail / Office Products
+  tier_3:
+    - Reuters Retail / Consumer
+    - Bloomberg Retail
+    - CNBC Retail
+    - Market research summaries
+    - Trade association releases
+include_topics:
+  - 办公用品零售和B2B分销
+  - 办公家具、人体工学和混合办公
+  - 文具、纸品、耗材和打印用品
+  - 电商、平台化采购和企业采购系统
+  - 行业并购、融资和渠道整合
+  - 供应链、库存、物流和价格变化
+  - 可持续办公用品和循环材料
+  - AI办公、数字化工具和智能办公设备
+  - 大客户、政府和教育采购
+  - 门店转型、私域会员和全渠道服务
+exclude_topics:
+  - 泛办公效率技巧
+  - 个人文具种草和自媒体测评
+  - 单品促销软文
+  - 与办公用品无关的消费电子新闻
+  - 只谈股价且无经营信息的资本市场新闻
+  - 无渠道、价格、供应链或行业影响的新品稿
+writing_style:
+  - 专业
+  - 清爽
+  - 有渠道和供应链判断
+  - 关注B2B采购
+  - 短句优先
+  - 卡片化
+scoring:
+  scale: 0-5
+  weights:
+    freshness: 1.3
+    industry_impact: 1.4
+    business_value: 1.5
+    regional_relevance: 1.2
+    novelty: 0.9
+    actionability: 1.2
+    source_quality: 1.2
+  priority_rules:
+    - B2B分销、企业采购、全渠道零售、办公家具和供应链变化优先
+    - 涉及Staples、Office Depot、Amazon Business、W.B. Mason、Lyreco、ACCO、Herman Miller、Steelcase等头部玩家优先
+    - 个人文具种草、促销稿和弱商业关联内容降权
+dedupe_keys:
+  - company
+  - brand
+  - product_category
+  - channel
+  - transaction
+  - market_region
+  - date_window
+poster:
+  size: 1080x1350
+  scale: 2
+  cover_title_max_chars: 20
+  quick_read_max_chars: 18
+  card_title_max_chars: 18
+  output_pattern: outputs/office_supplies/{brand_slug}-poster-{date}@2x.png
+  avoid_line_break_terms:
+    - 办公用品
+    - 办公家具
+    - 企业采购
+    - B2B分销
+    - 混合办公
+    - 人体工学
+    - 打印耗材
+    - 全渠道
+    - 供应链
+memory_rules:
+  memory_path: outputs/office_supplies/memory.md
+  output_dir: outputs/office_supplies
+  remember:
+    - selected_story_ids
+    - final_source_links
+    - channel_trend_themes
+    - procurement_trend_themes
+    - rejected_duplicate_topics
+    - source_quality_notes
+  avoid:
+    - raw_search_logs
+    - influencer_stationery_content
+    - unsupported_market_size_claims
+

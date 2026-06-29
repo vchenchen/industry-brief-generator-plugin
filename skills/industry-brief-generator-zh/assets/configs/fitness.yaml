@@ -1,0 +1,109 @@
+industry: fitness
+industry_name_zh: 海外健身行业
+brand: FitBiz Daily｜海外健身商业快报
+logo_preferred: outputs/brand/fitbiz-daily-square-logo-alt.png
+candidate_count: 20
+final_count: 8
+regions:
+  - 美国
+  - 加拿大
+  - 英国
+  - 欧盟主要国家
+  - 澳大利亚
+  - 新西兰
+  - 日本
+  - 韩国
+  - 新加坡
+  - 东南亚主要市场
+sources:
+  - Athletech News
+  - Fitt Insider
+  - Health Club Management / HCM
+  - Club Industry / American Spa
+  - PR Newswire - Fitness/Wellness
+  - Franchising.com - Fitness Franchise News
+  - Global Wellness Summit / Global Wellness News
+  - SGB Media Online
+source_tiers:
+  tier_1:
+    - Athletech News
+    - Fitt Insider
+    - Health Club Management / HCM
+    - Club Industry
+    - SGB Media Online
+  tier_2:
+    - PR Newswire - Fitness/Wellness
+    - Franchising.com - Fitness Franchise News
+    - American Spa
+    - Company announcements
+  tier_3:
+    - Global Wellness Summit / Global Wellness News
+    - Market research summaries
+    - Mainstream business media
+include_topics:
+  - 健身房与健身俱乐部
+  - 瑜伽和普拉提连锁
+  - 精品健身房
+  - 健身器械
+  - AI 与健身行业
+  - 长寿和恢复
+  - 健身与医疗系统
+  - 健身赛事和大众参与型赛事
+exclude_topics:
+  - 泛美容
+  - 普通食品
+  - 非健身相关 wellness
+  - 与健身服务无明确关系的消费健康新闻
+writing_style:
+  - 专业
+  - 清爽
+  - 有行业判断
+  - 短句优先
+  - 卡片化
+scoring:
+  scale: 0-5
+  weights:
+    freshness: 1.4
+    industry_impact: 1.5
+    business_value: 1.4
+    regional_relevance: 1.2
+    novelty: 1.0
+    actionability: 1.1
+    source_quality: 1.2
+  priority_rules:
+    - 最近24-48小时优先
+    - 门店扩张、资本交易、AI运营、医疗转诊和恢复/长寿优先
+    - 泛wellness和弱健身关联内容降权
+dedupe_keys:
+  - brand
+  - company
+  - product
+  - market
+  - transaction
+  - date_window
+poster:
+  size: 1080x1350
+  scale: 2
+  cover_title_max_chars: 20
+  quick_read_max_chars: 18
+  card_title_max_chars: 18
+  output_pattern: outputs/fitness/{brand_slug}-poster-{date}@2x.png
+  avoid_line_break_terms:
+    - 医疗
+    - 转诊
+    - 普拉提
+    - 普拉提核心床
+    - 长寿
+    - 恢复
+    - 可穿戴
+memory_rules:
+  memory_path: /Users/vchen/.codex/automations/automation/memory.md
+  output_dir: outputs/fitness
+  remember:
+    - selected_story_ids
+    - final_source_links
+    - rejected_duplicate_topics
+    - user_format_preferences
+  avoid:
+    - raw_search_logs
+    - low_confidence_claims

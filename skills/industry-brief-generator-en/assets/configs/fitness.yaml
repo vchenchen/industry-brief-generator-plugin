@@ -1,0 +1,103 @@
+industry: fitness
+industry_name: Overseas fitness industry
+industry_name_zh: Overseas fitness industry
+brand: FitBiz Daily | Overseas Fitness Business Brief
+logo_preferred: outputs/brand/fitbiz-daily-square-logo-alt.png
+candidate_count: 20
+final_count: 8
+regions:
+  - United States
+  - Canada
+  - United Kingdom
+  - Major EU markets
+  - Australia
+  - New Zealand
+  - Japan
+  - South Korea
+  - Singapore
+  - Major Southeast Asian markets
+sources:
+  - Athletech News
+  - Fitt Insider
+  - Health Club Management
+  - Club Industry
+  - PR Newswire Fitness and Wellness
+  - Franchising.com Fitness Franchise News
+  - Global Wellness Summit
+  - SGB Media Online
+source_tiers:
+  tier_1:
+    - Athletech News
+    - Fitt Insider
+    - Health Club Management
+    - Club Industry
+  tier_2:
+    - PR Newswire Fitness and Wellness
+    - Franchising.com Fitness Franchise News
+    - SGB Media Online
+  tier_3:
+    - Global Wellness Summit
+    - Company announcements
+    - Market research summaries
+include_topics:
+  - gyms and health clubs
+  - boutique fitness
+  - yoga and Pilates chains
+  - fitness equipment
+  - AI in fitness
+  - longevity and recovery
+  - fitness and healthcare systems
+  - mass-participation fitness events
+exclude_topics:
+  - generic beauty
+  - ordinary food news
+  - wellness content with no direct fitness-service link
+  - stock-only financial news
+writing_style:
+  - professional
+  - concise
+  - business-oriented
+  - card-like
+scoring:
+  scale: 0-5
+  weights:
+    freshness: 1.4
+    industry_impact: 1.4
+    business_value: 1.4
+    regional_relevance: 1.2
+    novelty: 1.0
+    actionability: 1.2
+    source_quality: 1.3
+  priority_rules:
+    - Prioritize expansion, transactions, AI operations, healthcare referral, recovery, and longevity.
+    - Downgrade broad wellness content with weak fitness relevance.
+dedupe_keys:
+  - company
+  - brand
+  - market_region
+  - transaction
+  - date_window
+poster:
+  size: 1080x1350
+  scale: 2
+  cover_title_max_chars: 56
+  quick_read_max_chars: 36
+  card_title_max_chars: 42
+  output_pattern: outputs/fitness/{brand_slug}-poster-{date}@2x.png
+  avoid_line_break_terms:
+    - healthcare referral
+    - Pilates
+    - longevity
+    - recovery
+    - wearable technology
+memory_rules:
+  memory_path: outputs/fitness/memory.md
+  output_dir: outputs/fitness
+  remember:
+    - selected_story_ids
+    - final_source_links
+    - trend_themes
+    - rejected_duplicate_topics
+  avoid:
+    - raw_search_logs
+    - unsupported_market_size_claims

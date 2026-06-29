@@ -1,0 +1,43 @@
+{
+  "name": "industry-brief-generator-plugin",
+  "version": "0.1.0",
+  "description": "A bilingual Codex plugin for candidate-first industry brief generation.",
+  "author": {
+    "name": "Vincent Chen",
+    "url": "https://github.com/vchenchen"
+  },
+  "homepage": "https://github.com/vchenchen/industry-brief-generator-plugin",
+  "repository": "https://github.com/vchenchen/industry-brief-generator-plugin",
+  "license": "MIT",
+  "keywords": [
+    "industry-brief",
+    "market-research",
+    "newsletter",
+    "poster",
+    "codex-skill"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Industry Brief Generator",
+    "shortDescription": "20 sourced topics first, final brief after human selection.",
+    "longDescription": "A bilingual candidate-first workflow for industry briefings. Input an industry, market, focus topics, exclusions, and final use. The plugin generates a sourced candidate pool first, waits for selected item numbers, then creates the final brief, poster, and channel copy.",
+    "developerName": "Vincent Chen",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write",
+      "Research"
+    ],
+    "defaultPrompt": [
+      "Use $industry-brief-generator-en for an industry brief.",
+      "使用 $industry-brief-generator-zh 生成行业快报候选池。",
+      "Create 20 candidate topics before final publishing."
+    ],
+    "brandColor": "#A7FF35",
+    "screenshots": [
+      "./assets/candidate-pool-preview.png",
+      "./assets/pet-industry-demo-poster.png",
+      "./assets/chemicals-demo-poster.png"
+    ]
+  }
+}

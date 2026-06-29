@@ -1,0 +1,127 @@
+industry: pet
+industry_name_zh: 海外宠物行业
+brand: PetBiz Daily｜海外宠物商业快报
+logo_preferred: outputs/brand/petbiz-daily-square-logo.png
+candidate_count: 20
+final_count: 8
+regions:
+  - 美国
+  - 加拿大
+  - 英国
+  - 欧盟主要国家
+  - 澳大利亚
+  - 新西兰
+  - 日本
+  - 韩国
+  - 新加坡
+  - 东南亚主要市场
+sources:
+  - Petfood Industry
+  - GlobalPETS
+  - Pet Business
+  - Pet Product News
+  - Pets International
+  - Petfood Processing
+  - Veterinary Practice News
+  - Today’s Veterinary Business
+  - PR Newswire - Pet
+  - Business Wire - Pet
+  - Reuters Consumer / Retail
+source_tiers:
+  tier_1:
+    - Petfood Industry
+    - GlobalPETS
+    - Pet Business
+    - Pet Product News
+    - Petfood Processing
+    - Veterinary Practice News
+    - Today’s Veterinary Business
+  tier_2:
+    - Pets International
+    - PR Newswire - Pet
+    - Business Wire - Pet
+    - Company announcements
+    - Retailer announcements
+    - Veterinary association releases
+  tier_3:
+    - Reuters Consumer / Retail
+    - Euromonitor summaries
+    - Mintel summaries
+    - Packaged Facts summaries
+    - Mainstream business media
+include_topics:
+  - 宠物食品和营养
+  - 宠物零售和电商
+  - 宠物医疗和兽医服务
+  - 宠物保险和健康管理
+  - 宠物用品、智能硬件和家居产品
+  - 宠物服务、寄养、训练和美容连锁
+  - 行业并购、融资和上市
+  - 供应链、原料、召回和食品安全
+  - 可持续包装和替代蛋白
+  - 宠物人性化和高端化消费趋势
+exclude_topics:
+  - 泛萌宠内容
+  - 自媒体养宠经验
+  - 单纯宠物故事
+  - 与商业无关的动物救助新闻
+  - 只谈股价且无经营信息的资本市场新闻
+  - 企业软文且无新品、渠道、资本或行业影响
+writing_style:
+  - 专业
+  - 清爽
+  - 有消费行业判断
+  - 短句优先
+  - 卡片化
+scoring:
+  scale: 0-5
+  weights:
+    freshness: 1.3
+    industry_impact: 1.4
+    business_value: 1.5
+    regional_relevance: 1.2
+    novelty: 1.0
+    actionability: 1.2
+    source_quality: 1.2
+  priority_rules:
+    - 宠物食品、医疗、保险、零售、电商、并购和监管优先
+    - 有明确渠道、价格、供应链或消费者趋势信号的内容优先
+    - 泛萌宠、自媒体和弱商业关联内容降权
+dedupe_keys:
+  - company
+  - brand
+  - product
+  - retail_channel
+  - transaction
+  - market_region
+  - date_window
+poster:
+  size: 1080x1350
+  scale: 2
+  cover_title_max_chars: 20
+  quick_read_max_chars: 18
+  card_title_max_chars: 18
+  output_pattern: outputs/pet/{brand_slug}-poster-{date}@2x.png
+  avoid_line_break_terms:
+    - 宠物食品
+    - 宠物医疗
+    - 兽医服务
+    - 宠物保险
+    - 智能硬件
+    - 食品安全
+    - 替代蛋白
+    - 高端化
+memory_rules:
+  memory_path: outputs/pet/memory.md
+  output_dir: outputs/pet
+  remember:
+    - selected_story_ids
+    - final_source_links
+    - consumer_trend_themes
+    - rejected_duplicate_topics
+    - source_quality_notes
+  avoid:
+    - raw_search_logs
+    - cute_pet_content_without_business_value
+    - low_confidence_market_size_claims
+
