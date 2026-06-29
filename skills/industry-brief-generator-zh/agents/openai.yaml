@@ -1,4 +1,0 @@
-interface:
-  display_name: "Industry Brief Generator"
-  short_description: "Generate candidate-first industry briefs"
-  default_prompt: "Use $industry-brief-generator-zh to create a candidate-first overseas industry brief from my industry, market, focus, exclusions, and final use."

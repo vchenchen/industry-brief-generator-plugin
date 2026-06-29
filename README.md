@@ -4,10 +4,10 @@ A bilingual Codex Plugin for candidate-first industry brief generation.
 
 Input an industry, target market, focus topics, exclusions, and final use. It first creates 20 sourced candidate topics. After the user selects 8, it generates the final brief, poster, and channel-ready copy.
 
-This plugin bundles two Codex Skills:
+This plugin bundles two clearly separated Codex Skills:
 
-- `$industry-brief-generator-en`
-- `$industry-brief-generator-zh`
+- `$industry-brief-generator-english` for English output
+- `$industry-brief-generator-chinese` for Chinese output
 
 ## Why It Exists
 
@@ -45,7 +45,7 @@ If public information is insufficient, it should stop and ask for better sources
 ## English Quick Start
 
 ```text
-Use $industry-brief-generator-en.
+Use $industry-brief-generator-english.
 
 Industry: office supplies
 Target market: global
@@ -58,7 +58,7 @@ Preferred output language: English
 ## 中文快速开始
 
 ```text
-使用 $industry-brief-generator-zh。
+使用 $industry-brief-generator-chinese。
 
 输入具体行业：办公用品行业
 输入具体市场：全球
@@ -71,8 +71,8 @@ Preferred output language: English
 
 ```text
 skills/
-├── industry-brief-generator-en/
-└── industry-brief-generator-zh/
+├── industry-brief-generator-english/
+└── industry-brief-generator-chinese/
 ```
 
 Each skill includes:

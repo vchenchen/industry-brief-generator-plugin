@@ -1,0 +1,4 @@
+interface:
+  display_name: "Industry Brief Generator - Chinese"
+  short_description: "Generate candidate-first Chinese industry briefs"
+  default_prompt: "使用 $industry-brief-generator-chinese 根据行业、市场、关注重点、排除内容和最终用途生成候选优先的行业快报。"

@@ -1,6 +1,6 @@
 {
   "name": "industry-brief-generator-plugin",
-  "version": "0.1.0",
+  "version": "0.1.0+codex.20260629154202",
   "description": "A bilingual Codex plugin for candidate-first industry brief generation.",
   "author": {
     "name": "Vincent Chen",
@@ -29,8 +29,8 @@
       "Research"
     ],
     "defaultPrompt": [
-      "Use $industry-brief-generator-en for an industry brief.",
-      "使用 $industry-brief-generator-zh 生成行业快报候选池。",
+      "Use $industry-brief-generator-english for an English industry brief.",
+      "\u4f7f\u7528 $industry-brief-generator-chinese \u751f\u6210\u4e2d\u6587\u884c\u4e1a\u5feb\u62a5\u5019\u9009\u6c60\u3002",
       "Create 20 candidate topics before final publishing."
     ],
     "brandColor": "#A7FF35",
