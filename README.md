@@ -1,8 +1,8 @@
 # Industry Brief Generator Plugin
 
-A bilingual Codex Plugin for candidate-first industry brief generation.
+Codex Plugin: a bilingual universal industry brief generator.
 
-Input an industry, target market, focus topics, exclusions, and final use. It first creates 20 sourced candidate topics. After the user selects 8, it generates the final brief, poster, and channel-ready copy.
+Enter an industry, market, focus topics, exclusions, and final use. It generates 20 sourced story candidates first. After the user chooses 8, it automatically creates the brief, poster, and channel-ready copy.
 
 This plugin bundles two clearly separated Codex Skills:
 

@@ -1,11 +1,11 @@
 ---
 name: industry-brief-generator-english
-description: English Edition of the Industry Brief Generator. Create reusable, candidate-first English industry briefings from current overseas market sources. Use when the user wants an English industry news briefing, daily or weekly industry digest, trend candidate pool, internal brief, newsletter copy, social copy, customer update, or poster-style brief for any industry; especially when the user provides or should provide industry, target market, focus topics, excluded content, and final use. Also use when adapting the workflow to a new industry, creating an industry YAML config, or handling an unsupported or low-information industry without fabricating sources.
+description: English Edition of the Industry Brief Generator. A universal Codex Skill for industry briefs: enter an industry, market, focus topics, exclusions, and final use; generate 20 sourced story candidates first; choose 8; then create the brief, poster, and channel-ready copy. Use when the user wants an English industry news briefing, digest, candidate pool, internal brief, newsletter copy, customer update, social post, or poster-style brief for any industry.
 ---
 
 # Industry Brief Generator - English Edition
 
-Generate industry briefs in two stages: first a sourced candidate pool, then final brief assets only after the user selects the required number of items.
+Codex Skill: a universal industry brief generator. Enter an industry, market, focus topics, exclusions, and final use. Generate 20 sourced story candidates first. After the user chooses 8, create the brief, poster, and channel-ready copy.
 
 ## Quick Start
 
