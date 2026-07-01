@@ -1,7 +1,7 @@
 {
   "name": "industry-brief-generator-plugin",
   "version": "0.1.0+codex.20260629154202",
-  "description": "A bilingual universal industry brief generator for Codex.",
+  "description": "A bilingual universal industry news briefing generator for Codex.",
   "author": {
     "name": "Vincent Chen",
     "url": "https://github.com/vchenchen"
@@ -19,8 +19,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Industry Brief Generator",
-    "shortDescription": "Enter an industry, choose 8 topics, generate the brief, poster, and copy.",
-    "longDescription": "A bilingual universal industry brief generator for Codex. Enter an industry, market, focus topics, exclusions, and final use. The plugin generates 20 sourced story candidates first, waits for the user to choose 8, then creates the brief, poster, and channel-ready copy.",
+    "shortDescription": "Enter an industry, choose 8 topics, get a brief, poster, and copy.",
+    "longDescription": "A bilingual universal industry news briefing generator for Codex. Enter an industry, market, focus topics, and final use. The plugin generates candidate story topics first, waits for the user to choose 8, then automatically creates the brief, poster, and channel-ready copy.",
     "developerName": "Vincent Chen",
     "category": "Productivity",
     "capabilities": [
