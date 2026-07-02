@@ -37,7 +37,7 @@ Use this format for every item:
 ## Closing Gate
 
 ```text
-Please reply with {final_count} item numbers. I will use them to generate the final poster, text brief, and channel-ready copy.
+Please reply with the {final_count} item numbers you want to keep, or say `remove` with the {drop_count} item numbers you want to drop. I will use the final {final_count} kept items to generate the poster, text brief, and channel-ready copy.
 ```
 
 For internal-only use cases, replace channel-ready copy with the requested final use.

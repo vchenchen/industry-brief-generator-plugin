@@ -102,14 +102,20 @@ Default dimensions:
 
 ## Selection Gate
 
-Before the user selects exactly `final_count` items, do not generate:
+Before generating final assets, normalize the user's reply into a keep-set:
+
+- Inclusion replies such as `keep 1,2...` must list exactly `final_count` item numbers.
+- Exclusion replies such as `remove 3,4...` must list exactly `drop_count` item numbers, then convert to kept items by removing those numbers from the full candidate set.
+- The normalized keep-set must contain exactly `final_count` items.
+
+Before the normalized keep-set contains exactly `final_count` items, do not generate:
 
 - final brief,
 - poster image,
 - social copy,
 - newsletter copy.
 
-If the selected count is wrong, ask the user to complete or confirm the change.
+If the inclusion count, exclusion count, or normalized keep-set count is wrong or ambiguous, ask the user to complete or confirm the change.
 
 ## Poster QA
 

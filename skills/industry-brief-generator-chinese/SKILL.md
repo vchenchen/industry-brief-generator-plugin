@@ -23,11 +23,11 @@ If the user provides all fields, run the candidate-pool stage. If the user only 
 
 ## Required Workflow
 
-1. Determine `industry`, `market`, `focus_topics`, `exclude_topics`, `final_use`, `candidate_count`, and `final_count`.
+1. Determine `industry`, `market`, `focus_topics`, `exclude_topics`, `final_use`, `candidate_count`, `final_count`, and `drop_count = candidate_count - final_count`.
 2. Load an industry YAML config if available. If missing, create a draft config first; do not run the candidate pool yet.
 3. Browse/search current sources for news, policies, events, deals, pricing, product launches, and industry shifts. For current news, always verify dates and links.
 4. Generate the candidate pool first. Do not produce final brief, poster, or social copy yet.
-5. Wait for the user to select exactly `final_count` item numbers. Accept either inclusion wording, such as `保留1,2...`, or exclusion wording, such as `去掉3,4...`.
+5. Wait for a clear selection. Accept inclusion wording, such as `保留1,2...`, with exactly `final_count` item numbers; or exclusion wording, such as `去掉3,4...`, with exactly `drop_count` item numbers. Normalize exclusion replies into the final keep-set before validating the count.
 6. Generate final text and poster only after the selection is clear.
 7. Render and visually inspect the poster. Fix layout issues before delivery.
 8. Save useful run memory if the local project has an output/memory convention.
@@ -48,7 +48,7 @@ Each candidate must include:
 End with:
 
 ```text
-请回复{final_count}个编号，我将据此生成今日快报海报、文字版快报和小红书文案。
+请回复要保留的{final_count}个编号；如果想用排除方式，请回复“去掉”加{drop_count}个要删除的编号。我将使用最终保留的{final_count}条生成今日快报海报、文字版快报和小红书文案。
 ```
 
 Adjust the final wording for `内部简报` or `客户沟通` when appropriate.

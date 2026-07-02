@@ -24,11 +24,11 @@ If the user provides all fields, run the candidate-pool stage. If the user only 
 
 ## Required Workflow
 
-1. Determine `industry`, `market`, `focus_topics`, `excluded_topics`, `final_use`, `output_language`, `candidate_count`, and `final_count`.
+1. Determine `industry`, `market`, `focus_topics`, `excluded_topics`, `final_use`, `output_language`, `candidate_count`, `final_count`, and `drop_count = candidate_count - final_count`.
 2. Load an industry YAML config if available. If missing, create a draft config first; do not run the candidate pool yet.
 3. Browse or search current sources for news, policies, events, deals, pricing, product launches, and industry shifts. For current news, always verify dates and links.
 4. Generate the candidate pool first. Do not produce the final brief, poster, or social copy yet.
-5. Wait for the user to select exactly `final_count` item numbers. Accept either inclusion wording, such as `keep 1,2...`, or exclusion wording, such as `remove 3,4...`.
+5. Wait for a clear selection. Accept inclusion wording, such as `keep 1,2...`, with exactly `final_count` item numbers; or exclusion wording, such as `remove 3,4...`, with exactly `drop_count` item numbers. Normalize exclusion replies into the final keep-set before validating the count.
 6. Generate final text and poster only after the selection is clear.
 7. Render and visually inspect the poster. Fix layout issues before delivery.
 8. Save useful run memory if the local project has an output or memory convention.
@@ -52,7 +52,7 @@ Each candidate must include:
 End with a clear selection gate, for example:
 
 ```text
-Please reply with {final_count} item numbers. I will use them to generate the final poster, text brief, and channel-ready copy.
+Please reply with the {final_count} item numbers you want to keep, or say `remove` with the {drop_count} item numbers you want to drop. I will use the final {final_count} kept items to generate the poster, text brief, and channel-ready copy.
 ```
 
 Adjust the final wording for internal briefs, newsletters, customer updates, or social posts.
